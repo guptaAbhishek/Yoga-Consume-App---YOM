@@ -1,0 +1,11 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="styleCaldroidViewLayout">@style/CaldroidDefaultCalendarViewLayout</item>
+        <item name="styleCaldroidLeftArrow">@style/CaldroidDefaultLeftButton</item> <item name="styleCaldroidRightArrow">@style/CaldroidDefaultRightButton</item> <item name="styleCaldroidMonthName">@style/CaldroidDefaultMonthName</item> <item name="styleCaldroidGridView">@style/CaldroidDefaultGridView</item> <item name="styleCaldroidNormalCell">@style/CaldroidDefaultNormalCell</item> <item name="styleCaldroidSquareCell">@style/CaldroidDefaultSquareCell</item> <item name="styleCaldroidWeekdayView">@style/CaldroidDefaultWeekday</item>
+    </style>
+
+
+</resources>

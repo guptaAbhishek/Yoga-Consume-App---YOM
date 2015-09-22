@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4.5dp"
+            android:layout_marginBottom="4.5dp"
+            android:layout_marginLeft="10.5dp"
+            android:layout_marginRight="10.5dp"
+            android:layout_gravity="center"
+            android:id="@+id/drawer_item_icon"/>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"></FrameLayout>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="2.5"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/abc_text_size_medium_material"
+        android:gravity="left|center"
+        android:id="@+id/drawer_item_text"
+        android:textColor="@color/action_bar_color"
+        />
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"></FrameLayout>
+</LinearLayout>

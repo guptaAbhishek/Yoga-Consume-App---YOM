@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.siddarthshikhar.yogaapp" >
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="16" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="ANDROID.PERMISSION.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/blue1"
+        android:label="YOM"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC-fTZ7HGa-hRxk52SJCMi3jH8_7F1GaD4" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_key" />
+        <!-- Splash screen -->
+        <activity
+            android:name=".Splash"
+            android:label="YOM"
+            android:noHistory="true"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Loginactivity"
+            android:label="THE POWER YOGA"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".Registeract"
+            android:label="THE POWER YOGA"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".BookClass"
+            android:label="@string/title_activity_book_class"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".MyProfile"
+            android:label="@string/title_activity_my_profile"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapsActivity"
+            android:label="MapsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service
+            android:name=".FetchAddressIntentService"
+            android:exported="false" />
+
+        <activity
+            android:name=".BookingConfirmation"
+            android:label="@string/title_activity_booking_confirmation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MyScheduleActivity"
+            android:label="@string/title_activity_my_schedule"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".EditProfileActivity"
+            android:label="@string/title_activity_edit_profile"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".ContactUsActivity"
+            android:label="@string/title_activity_contact_us"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".FAQActivity"
+            android:label="@string/title_activity_faq"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:label="@string/title_activity_forgot_password"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ChangePassword"
+            android:label="@string/title_activity_change_password"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".EnterPromoCodeActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_enter_promo_code" >
+        </activity>
+    </application>
+</manifest>
